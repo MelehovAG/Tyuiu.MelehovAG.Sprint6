@@ -29,13 +29,190 @@ namespace Tyuiu.MelehovAG.Sprint6.Task2.V7
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            this.groupBoxTask_SDA = new System.Windows.Forms.GroupBox();
+            this.pictureBoxFormula_SDA = new System.Windows.Forms.PictureBox();
+            this.groupBoxInput_SDA = new System.Windows.Forms.GroupBox();
+            this.labelVarStop_SDA = new System.Windows.Forms.Label();
+            this.textBoxVarStop_SDA = new System.Windows.Forms.TextBox();
+            this.labelVarStart_SDA = new System.Windows.Forms.Label();
+            this.textBoxVarStart_SDA = new System.Windows.Forms.TextBox();
+            this.groupBoxOutput_SDA = new System.Windows.Forms.GroupBox();
+            this.dataGridViewFunction_SDA = new System.Windows.Forms.DataGridView();
+            this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonDone_SDA = new System.Windows.Forms.Button();
+            this.buttonHelp_SDA = new System.Windows.Forms.Button();
+            this.groupBoxTask_SDA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_SDA)).BeginInit();
+            this.groupBoxInput_SDA.SuspendLayout();
+            this.groupBoxOutput_SDA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SDA)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // groupBoxTask_SDA
+            // 
+            this.groupBoxTask_SDA.Controls.Add(this.pictureBoxFormula_SDA);
+            this.groupBoxTask_SDA.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxTask_SDA.Name = "groupBoxTask_SDA";
+            this.groupBoxTask_SDA.Size = new System.Drawing.Size(479, 193);
+            this.groupBoxTask_SDA.TabIndex = 11;
+            this.groupBoxTask_SDA.TabStop = false;
+            this.groupBoxTask_SDA.Text = "Условие";
+            // 
+            // pictureBoxFormula_SDA
+            // 
+            this.pictureBoxFormula_SDA.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_SDA.Image")));
+            this.pictureBoxFormula_SDA.Location = new System.Drawing.Point(8, 19);
+            this.pictureBoxFormula_SDA.Name = "pictureBoxFormula_SDA";
+            this.pictureBoxFormula_SDA.Size = new System.Drawing.Size(454, 155);
+            this.pictureBoxFormula_SDA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxFormula_SDA.TabIndex = 3;
+            this.pictureBoxFormula_SDA.TabStop = false;
+            // 
+            // groupBoxInput_SDA
+            // 
+            this.groupBoxInput_SDA.Controls.Add(this.labelVarStop_SDA);
+            this.groupBoxInput_SDA.Controls.Add(this.textBoxVarStop_SDA);
+            this.groupBoxInput_SDA.Controls.Add(this.labelVarStart_SDA);
+            this.groupBoxInput_SDA.Controls.Add(this.textBoxVarStart_SDA);
+            this.groupBoxInput_SDA.Location = new System.Drawing.Point(12, 211);
+            this.groupBoxInput_SDA.Name = "groupBoxInput_SDA";
+            this.groupBoxInput_SDA.Size = new System.Drawing.Size(363, 87);
+            this.groupBoxInput_SDA.TabIndex = 12;
+            this.groupBoxInput_SDA.TabStop = false;
+            this.groupBoxInput_SDA.Text = "Ввод данных";
+            // 
+            // labelVarStop_SDA
+            // 
+            this.labelVarStop_SDA.AutoSize = true;
+            this.labelVarStop_SDA.Location = new System.Drawing.Point(188, 30);
+            this.labelVarStop_SDA.Name = "labelVarStop_SDA";
+            this.labelVarStop_SDA.Size = new System.Drawing.Size(69, 13);
+            this.labelVarStop_SDA.TabIndex = 3;
+            this.labelVarStop_SDA.Text = "Конец шага:";
+            // 
+            // textBoxVarStop_SDA
+            // 
+            this.textBoxVarStop_SDA.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxVarStop_SDA.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxVarStop_SDA.Location = new System.Drawing.Point(191, 46);
+            this.textBoxVarStop_SDA.Name = "textBoxVarStop_SDA";
+            this.textBoxVarStop_SDA.Size = new System.Drawing.Size(152, 20);
+            this.textBoxVarStop_SDA.TabIndex = 2;
+            // 
+            // labelVarStart_SDA
+            // 
+            this.labelVarStart_SDA.AutoSize = true;
+            this.labelVarStart_SDA.Location = new System.Drawing.Point(16, 30);
+            this.labelVarStart_SDA.Name = "labelVarStart_SDA";
+            this.labelVarStart_SDA.Size = new System.Drawing.Size(67, 13);
+            this.labelVarStart_SDA.TabIndex = 1;
+            this.labelVarStart_SDA.Text = "Старт шага:";
+            // 
+            // textBoxVarStart_SDA
+            // 
+            this.textBoxVarStart_SDA.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxVarStart_SDA.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxVarStart_SDA.Location = new System.Drawing.Point(19, 46);
+            this.textBoxVarStart_SDA.Name = "textBoxVarStart_SDA";
+            this.textBoxVarStart_SDA.Size = new System.Drawing.Size(152, 20);
+            this.textBoxVarStart_SDA.TabIndex = 0;
+            // 
+            // groupBoxOutput_SDA
+            // 
+            this.groupBoxOutput_SDA.Controls.Add(this.dataGridViewFunction_SDA);
+            this.groupBoxOutput_SDA.Location = new System.Drawing.Point(497, 12);
+            this.groupBoxOutput_SDA.Name = "groupBoxOutput_SDA";
+            this.groupBoxOutput_SDA.Size = new System.Drawing.Size(548, 286);
+            this.groupBoxOutput_SDA.TabIndex = 13;
+            this.groupBoxOutput_SDA.TabStop = false;
+            this.groupBoxOutput_SDA.Text = "Вывод данных";
+            // 
+            // dataGridViewFunction_SDA
+            // 
+            this.dataGridViewFunction_SDA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFunction_SDA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.X,
+            this.Y});
+            this.dataGridViewFunction_SDA.Location = new System.Drawing.Point(53, 30);
+            this.dataGridViewFunction_SDA.Name = "dataGridViewFunction_SDA";
+            this.dataGridViewFunction_SDA.RowHeadersVisible = false;
+            this.dataGridViewFunction_SDA.Size = new System.Drawing.Size(101, 239);
+            this.dataGridViewFunction_SDA.TabIndex = 6;
+            // 
+            // X
+            // 
+            this.X.HeaderText = "X";
+            this.X.Name = "X";
+            this.X.Width = 50;
+            // 
+            // Y
+            // 
+            this.Y.HeaderText = "F(X)";
+            this.Y.Name = "Y";
+            this.Y.Width = 50;
+            // 
+            // buttonDone_SDA
+            // 
+            this.buttonDone_SDA.BackColor = System.Drawing.Color.Lime;
+            this.buttonDone_SDA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDone_SDA.Location = new System.Drawing.Point(381, 211);
+            this.buttonDone_SDA.Name = "buttonDone_SDA";
+            this.buttonDone_SDA.Size = new System.Drawing.Size(110, 43);
+            this.buttonDone_SDA.TabIndex = 14;
+            this.buttonDone_SDA.Text = "Выполнить";
+            this.buttonDone_SDA.UseVisualStyleBackColor = false;
+            // 
+            // buttonHelp_SDA
+            // 
+            this.buttonHelp_SDA.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonHelp_SDA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonHelp_SDA.Location = new System.Drawing.Point(381, 260);
+            this.buttonHelp_SDA.Name = "buttonHelp_SDA";
+            this.buttonHelp_SDA.Size = new System.Drawing.Size(110, 38);
+            this.buttonHelp_SDA.TabIndex = 15;
+            this.buttonHelp_SDA.Text = "Справка";
+            this.buttonHelp_SDA.UseVisualStyleBackColor = false;
+            // 
+            // FormMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1057, 311);
+            this.Controls.Add(this.buttonHelp_SDA);
+            this.Controls.Add(this.buttonDone_SDA);
+            this.Controls.Add(this.groupBoxOutput_SDA);
+            this.Controls.Add(this.groupBoxInput_SDA);
+            this.Controls.Add(this.groupBoxTask_SDA);
+            this.Name = "FormMain";
+            this.Text = "Спринт 6 | Таск 2 | Вариант 7 | Мелехов А.Г.";
+            this.Load += new System.EventHandler(this.FormMain_Load);
+            this.groupBoxTask_SDA.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_SDA)).EndInit();
+            this.groupBoxInput_SDA.ResumeLayout(false);
+            this.groupBoxInput_SDA.PerformLayout();
+            this.groupBoxOutput_SDA.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SDA)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox groupBoxTask_SDA;
+        private System.Windows.Forms.PictureBox pictureBoxFormula_SDA;
+        private System.Windows.Forms.GroupBox groupBoxInput_SDA;
+        private System.Windows.Forms.Label labelVarStop_SDA;
+        private System.Windows.Forms.TextBox textBoxVarStop_SDA;
+        private System.Windows.Forms.Label labelVarStart_SDA;
+        private System.Windows.Forms.TextBox textBoxVarStart_SDA;
+        private System.Windows.Forms.GroupBox groupBoxOutput_SDA;
+        private System.Windows.Forms.DataGridView dataGridViewFunction_SDA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn X;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Y;
+        private System.Windows.Forms.Button buttonDone_SDA;
+        private System.Windows.Forms.Button buttonHelp_SDA;
     }
 }
 

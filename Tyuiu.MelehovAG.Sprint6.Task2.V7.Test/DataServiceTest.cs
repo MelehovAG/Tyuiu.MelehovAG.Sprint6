@@ -8,7 +8,7 @@ namespace Tyuiu.MelehovAG.Sprint6.Task2.V7.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidGetMassFunction()
         {
         }
     }
