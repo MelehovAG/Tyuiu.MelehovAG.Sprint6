@@ -11,7 +11,7 @@ namespace Tyuiu.MelehovAG.Sprint6.Task0.V11.Lib
     {
         public double Calculate(int x)
         {
-            double result = (1.6 * Math.Pow(x, 3)) - (2.1 * Math.Pow(x, 2)) + (7 * x) ;
+            double result = (1.6 * Math.Pow(x, 3)) - (2.1 * Math.Pow(x, 2)) + (7 * x);
             return Math.Round(result, 3);
         }
     }
