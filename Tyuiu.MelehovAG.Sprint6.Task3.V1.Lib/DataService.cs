@@ -12,23 +12,22 @@ namespace Tyuiu.MelehovAG.Sprint6.Task3.V1.Lib
         public int[,] Calculate(int[,] matrix)
         {
             int rows = matrix.GetUpperBound(0) + 1;
-            int columns = matrix.GetUpperBound(1) + 1;
-
-            int lastRow = rows - 1;
-
-            for (int i = 0; i < columns - 1; i++)
+           
+            for (int i = 0; i < rows - 1; i++)
             {
-                for (int j = 0; j < columns - i - 1; j++)
+                for (int j = i + 1; j < rows; j++)
                 {
-                    if (matrix[lastRow, j] > matrix[lastRow, j + 1])
+                    if (matrix[j, 0] < matrix[i, 0])
                     {
-                        int temp = matrix[lastRow, j];
-                        matrix[lastRow, j] = matrix[lastRow, j + 1];
-                        matrix[lastRow, j + 1] = temp;
+                        for (int k = 0; k < matrix.GetLength(1); k++)
+                        {
+                            int temp = matrix[i, k];
+                            matrix[i, k] = matrix[j, k];
+                            matrix[j, k] = temp;
+                        }
                     }
                 }
             }
-
             return matrix;
         }
     }
