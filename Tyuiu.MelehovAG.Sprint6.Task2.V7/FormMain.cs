@@ -52,7 +52,7 @@ namespace Tyuiu.MelehovAG.Sprint6.Task2.V7
 
         private void buttonHelp_SDA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 2 выполнил студент группы ПКТБ-23-1 Сысоев Данил Алексеевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 2 выполнил студент группы ПКТБ-23-1 Мелехов Алексей Григорьевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void buttonDone_SDA_MouseEnter(object sender, EventArgs e)
