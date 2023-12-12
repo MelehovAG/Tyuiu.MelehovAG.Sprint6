@@ -7,7 +7,29 @@ using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.MelehovAG.Sprint6.Task3.V1.Lib
 {
-    public class DataService
+    public class DataService : ISprint6Task3V1
     {
+        public int[,] Calculate(int[,] matrix)
+        {
+            int rows = matrix.GetUpperBound(0) + 1;
+            int columns = matrix.GetUpperBound(1) + 1;
+
+            int lastRow = rows - 1;
+
+            for (int i = 0; i < columns - 1; i++)
+            {
+                for (int j = 0; j < columns - i - 1; j++)
+                {
+                    if (matrix[lastRow, j] > matrix[lastRow, j + 1])
+                    {
+                        int temp = matrix[lastRow, j];
+                        matrix[lastRow, j] = matrix[lastRow, j + 1];
+                        matrix[lastRow, j + 1] = temp;
+                    }
+                }
+            }
+
+            return matrix;
+        }
     }
 }
